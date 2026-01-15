@@ -26,7 +26,7 @@ body {
 
 /* Typography */
 h1 {
-    font-size: 2rem;
+    font-size: 2.25rem;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
@@ -34,7 +34,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
     color: #1a1a1a;
@@ -121,12 +121,24 @@ p {
 .hero .subheadline {
     font-size: 1.125rem;
     color: #FFFFFF;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     opacity: 0.95;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.trust-line {
+    font-size: 1rem;
+    color: #FFFFFF;
+    margin-bottom: 2.5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    font-style: italic;
 }
 
 .cta-buttons {
@@ -305,6 +317,21 @@ p {
     animation: fadeInUp 0.6s ease 0.8s both;
 }
 
+.bridge-line {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #fff5f5 0%, #ffe5e5 100%);
+    border-radius: 15px;
+    border-left: 4px solid #ef4444;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -477,6 +504,20 @@ p {
 .feature p {
     color: #666666;
     line-height: 1.7;
+    margin-bottom: 0.75rem;
+}
+
+.feature p strong {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.feature p.benefit {
+    color: #20B2AA;
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
 }
 
 /* Workflow Section */
@@ -556,8 +597,15 @@ p {
 .workflow-step h3 {
     font-size: 1rem;
     color: #1a1a1a;
-    margin: 0;
+    margin: 0 0 0.5rem 0;
     line-height: 1.4;
+}
+
+.workflow-step p {
+    font-size: 0.9rem;
+    color: #666666;
+    margin: 0;
+    line-height: 1.5;
 }
 
 .workflow-arrow {
@@ -570,6 +618,33 @@ p {
 @keyframes pulse {
     0%, 100% { opacity: 1; transform: scale(1); }
     50% { opacity: 0.7; transform: scale(1.1); }
+}
+
+/* Social Proof Section */
+.social-proof {
+    padding: 4rem 0;
+    background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);
+    text-align: center;
+}
+
+.social-proof-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.trust-message {
+    font-size: 1.15rem;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.founder-credibility {
+    font-size: 1rem;
+    color: #666666;
+    font-style: italic;
+    margin-bottom: 0;
 }
 
 /* Demo Section */
@@ -751,14 +826,71 @@ footer p {
     opacity: 0.8;
 }
 
+/* Sticky WhatsApp CTA */
+.sticky-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: #FFFFFF;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 1rem;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.sticky-whatsapp:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
+    background: linear-gradient(135deg, #128C7E 0%, #25D366 100%);
+}
+
+.sticky-whatsapp i {
+    font-size: 1.5rem;
+}
+
+.sticky-whatsapp span {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .sticky-whatsapp span {
+        display: inline;
+    }
+}
+
+@media (max-width: 767px) {
+    .sticky-whatsapp {
+        bottom: 15px;
+        right: 15px;
+        padding: 1rem;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        justify-content: center;
+    }
+    
+    .sticky-whatsapp i {
+        font-size: 1.75rem;
+    }
+}
+
 /* Tablet Styles (768px and up) */
 @media (min-width: 768px) {
     h1 {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     h2 {
-        font-size: 2.25rem;
+        font-size: 2.5rem;
     }
 
     .hero {
@@ -766,7 +898,7 @@ footer p {
     }
 
     .hero h1 {
-        font-size: 3.5rem;
+        font-size: 4rem;
     }
 
     .hero .subheadline {
@@ -791,6 +923,7 @@ footer p {
     .problem,
     .solution,
     .workflow,
+    .social-proof,
     .demo,
     .pricing,
     .founder,
@@ -832,11 +965,11 @@ footer p {
 /* Desktop Styles (1024px and up) */
 @media (min-width: 1024px) {
     h1 {
-        font-size: 3.5rem;
+        font-size: 4rem;
     }
 
     h2 {
-        font-size: 2.75rem;
+        font-size: 3rem;
     }
 
     .hero {
@@ -844,7 +977,7 @@ footer p {
     }
 
     .hero h1 {
-        font-size: 4rem;
+        font-size: 4.5rem;
     }
 
     .hero .subheadline {
@@ -858,6 +991,7 @@ footer p {
     .problem,
     .solution,
     .workflow,
+    .social-proof,
     .demo,
     .pricing,
     .founder,
