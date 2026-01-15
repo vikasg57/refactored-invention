@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Patient Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-icon">
+                <i class="fas fa-hospital-alt"></i>
+            </div>
+            <h1>Streamline Your Clinic Operations</h1>
+            <p class="subheadline">Manage patients, appointments, and records with ease. A comprehensive solution designed for modern healthcare practices.</p>
+            <div class="cta-buttons">
+                <a href="#demo" class="btn btn-primary">
+                    <i class="fas fa-play-circle"></i> Request Demo
+                </a>
+                <!-- TODO: Update with actual Google Form link -->
+                <a href="#whatsapp" class="btn btn-secondary">
+                    <i class="fab fa-whatsapp"></i> Contact on WhatsApp
+                </a>
+                <!-- TODO: Update with actual WhatsApp link -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="problem">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-exclamation-triangle section-icon"></i>
+                <h2>The Challenges You Face</h2>
+                <p class="section-subtitle">Every day, these pain points slow down your practice and impact patient care</p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon-wrapper">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Manual Record Management</h3>
+                    <p>Time-consuming and error-prone patient record management that wastes hours every day</p>
+                    <div class="problem-stats">
+                        <span class="stat-badge">+3 hrs/day</span>
+                    </div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon-wrapper">
+                        <i class="fas fa-calendar-times"></i>
+                    </div>
+                    <h3>Double Bookings</h3>
+                    <p>Appointment scheduling conflicts lead to double bookings and frustrated patients</p>
+                    <div class="problem-stats">
+                        <span class="stat-badge">15% conflicts</span>
+                    </div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon-wrapper">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Lost Records</h3>
+                    <p>Difficulty tracking patient history and medical records when you need them most</p>
+                    <div class="problem-stats">
+                        <span class="stat-badge">Slow retrieval</span>
+                    </div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon-wrapper">
+                        <i class="fas fa-comments-slash"></i>
+                    </div>
+                    <h3>Poor Communication</h3>
+                    <p>Inefficient communication between staff and patients causes delays and confusion</p>
+                    <div class="problem-stats">
+                        <span class="stat-badge">Delayed response</span>
+                    </div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon-wrapper">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+                    <h3>Paper-Based Systems</h3>
+                    <p>Paper-based systems make data retrieval slow and cumbersome, wasting valuable time</p>
+                    <div class="problem-stats">
+                        <span class="stat-badge">Outdated</span>
+                    </div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon-wrapper">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>No Real-Time Insights</h3>
+                    <p>Lack of real-time insights into clinic operations makes decision-making difficult</p>
+                    <div class="problem-stats">
+                        <span class="stat-badge">Blind spots</span>
+                    </div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon-wrapper">
+                        <i class="fas fa-prescription"></i>
+                    </div>
+                    <h3>Manual Prescription Writing</h3>
+                    <p>Handwriting prescriptions is slow, error-prone, and can lead to medication mistakes</p>
+                    <div class="problem-stats">
+                        <span class="stat-badge">Error risk</span>
+                    </div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon-wrapper">
+                        <i class="fas fa-calendar-plus"></i>
+                    </div>
+                    <h3>Follow-up Scheduling</h3>
+                    <p>Manually scheduling follow-up meetings is time-consuming and often gets forgotten</p>
+                    <div class="problem-stats">
+                        <span class="stat-badge">Missed follow-ups</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="solution">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-lightbulb section-icon"></i>
+                <h2>Your Complete Solution</h2>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp Communication</h3>
+                    <p>Seamless WhatsApp integration for all patient touchpoints - appointment notifications, prescription delivery, and follow-up visit reminders. Keep patients informed instantly.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Patient Management</h3>
+                    <p>Comprehensive patient profiles with medical history, contact information, and appointment records all in one place.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Smart Scheduling</h3>
+                    <p>Automated appointment booking system that prevents conflicts and sends reminders to both patients and staff.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-medical"></i>
+                    </div>
+                    <h3>Digital Records</h3>
+                    <p>Secure, cloud-based storage for all medical records, prescriptions, and documents with easy search and retrieval.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Real-time Analytics</h3>
+                    <p>Dashboard with insights into patient flow, appointment trends, and clinic performance metrics.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure & Compliant</h3>
+                    <p>Built with healthcare data security standards in mind, ensuring patient privacy and regulatory compliance.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Access</h3>
+                    <p>Access your clinic management system from any device, anywhere, at any time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section id="workflow" class="workflow">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-sitemap section-icon"></i>
+                <h2>How It Works</h2>
+            </div>
+            <div class="workflow-steps">
+                <div class="workflow-step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3>Patient Registration</h3>
+                </div>
+                <div class="workflow-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h3>Create Profile</h3>
+                </div>
+                <div class="workflow-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Schedule Appointment</h3>
+                </div>
+                <div class="workflow-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Confirmation</h3>
+                </div>
+                <div class="workflow-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">5</div>
+                    <div class="step-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>Patient Visit</h3>
+                </div>
+                <div class="workflow-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">6</div>
+                    <div class="step-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3>Record Data</h3>
+                </div>
+                <div class="workflow-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">7</div>
+                    <div class="step-icon">
+                        <i class="fas fa-prescription"></i>
+                    </div>
+                    <h3>Generate Prescription</h3>
+                </div>
+                <div class="workflow-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">8</div>
+                    <div class="step-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3>Update History</h3>
+                </div>
+                <div class="workflow-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">9</div>
+                    <div class="step-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Follow-up & Notification</h3>
+                </div>
+                <div class="workflow-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">10</div>
+                    <div class="step-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Analytics & Reports</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-play-circle section-icon"></i>
+                <h2>See It In Action</h2>
+            </div>
+            <div class="demo-content">
+                <div class="demo-icon">
+                    <i class="fas fa-desktop"></i>
+                </div>
+                <p>Experience how our clinic management system can transform your practice. Request a personalized demo to see the platform tailored to your specific needs.</p>
+                <p>Our team will walk you through all features, answer your questions, and show you how easy it is to get started.</p>
+                <a href="#demo" class="btn btn-primary">
+                    <i class="fas fa-video"></i> Request Demo
+                </a>
+                <!-- TODO: Update with actual Google Form link -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-tags section-icon"></i>
+                <h2>Flexible Pricing</h2>
+            </div>
+            <div class="pricing-content">
+                <div class="pricing-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <p>We understand that every clinic has unique needs. Our pricing is designed to be flexible and scalable, ensuring you only pay for what you need.</p>
+                <p>Contact us to discuss a custom pricing plan that fits your practice size and requirements. We're committed to providing value that helps your clinic grow.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section id="founder" class="founder">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-users section-icon"></i>
+                <h2>Built by Healthcare Professionals</h2>
+            </div>
+            <div class="founder-content">
+                <div class="founder-icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <p>Our clinic management system was developed by a team with deep understanding of healthcare operations. We've worked closely with clinics to identify pain points and create solutions that truly make a difference.</p>
+                <p>With years of experience in both healthcare and technology, we're committed to providing a platform that not only meets but exceeds your expectations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="final-cta" class="final-cta">
+        <div class="container">
+            <h2>Ready to Transform Your Clinic?</h2>
+            <p>Join clinics that have streamlined their operations and improved patient care with our management system.</p>
+            <div class="cta-buttons">
+                <a href="#demo" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> Get Started Today
+                </a>
+                <!-- TODO: Update with actual Google Form link -->
+                <a href="#whatsapp" class="btn btn-secondary">
+                    <i class="fas fa-comments"></i> Talk to Us
+                </a>
+                <!-- TODO: Update with actual WhatsApp link -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Clinic Patient Management System. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
