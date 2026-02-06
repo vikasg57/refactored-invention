@@ -3,12 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clinic Patient Management System</title>
+    <title>NivoHealth – Clinic Patient Management</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 </head>
 <body>
+    <!-- Sticky Header -->
+    <header class="sticky-header" id="stickyHeader">
+        <div class="header-container">
+            <a href="#hero" class="header-logo">NivoHealth</a>
+            <nav class="header-nav" id="headerNav">
+                <a href="#problem">Challenges</a>
+                <a href="#solution">Features</a>
+                <a href="#workflow">How It Works</a>
+                <a href="#demo">Demo</a>
+                <a href="#final-cta" class="header-cta">Get Started</a>
+            </nav>
+            <button class="header-toggle" id="headerToggle" aria-label="Toggle menu">
+                <i class="fas fa-bars" id="menuIcon"></i>
+            </button>
+        </div>
+    </header>
+
     <!-- Hero Section -->
     <section id="hero" class="hero">
         <div class="container">
@@ -16,7 +33,7 @@
                 <i class="fas fa-hospital-alt"></i>
             </div>
             <h1>Spend Less Time on Admin. More Time with Patients.</h1>
-            <p class="subheadline">A simple clinic management system that reduces appointment chaos, eliminates manual records, and keeps your clinic running smoothly.</p>
+            <p class="subheadline">A simple clinic management system by NivoHealth that reduces appointment chaos, eliminates manual records, and keeps your clinic running smoothly.</p>
             <div class="cta-buttons">
                 <a href="#demo" class="btn btn-primary">
                     <i class="fas fa-play-circle"></i> Book a Free Demo
@@ -281,7 +298,7 @@
                 <div class="demo-icon">
                     <i class="fas fa-desktop"></i>
                 </div>
-                <p>Experience how our clinic management system can transform your practice. Request a personalized demo to see the platform tailored to your specific needs.</p>
+                <p>Experience how NivoHealth can transform your practice. Request a personalized demo to see the platform tailored to your specific needs.</p>
                 <p>Our team will walk you through all features, answer your questions, and show you how easy it is to get started.</p>
                 <a href="#demo" class="btn btn-primary">
                     <i class="fas fa-video"></i> Book a Free Demo
@@ -322,7 +339,7 @@
                 <div class="founder-icon">
                     <i class="fas fa-user-tie"></i>
                 </div>
-                <p>Our clinic management system was developed by a team with deep understanding of healthcare operations. We've worked closely with clinics to identify pain points and create solutions that truly make a difference.</p>
+                <p>NivoHealth was developed by a team with deep understanding of healthcare operations. We've worked closely with clinics to identify pain points and create solutions that truly make a difference.</p>
                 <p>With years of experience in both healthcare and technology, we're committed to providing a platform that not only meets but exceeds your expectations.</p>
             </div>
         </div>
@@ -348,7 +365,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Clinic Patient Management System. All rights reserved.</p>
+            <p>&copy; 2024 NivoHealth. All rights reserved.</p>
         </div>
     </footer>
 
@@ -359,5 +376,48 @@
     </a>
     <!-- TODO: Update with actual WhatsApp link -->
 
+    <script>
+        (function() {
+            var header = document.getElementById('stickyHeader');
+            var toggle = document.getElementById('headerToggle');
+            var nav = document.getElementById('headerNav');
+
+            function onScroll() {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            }
+
+            function toggleMenu() {
+                var isOpen = nav.classList.toggle('active');
+                toggle.classList.toggle('active');
+                toggle.setAttribute('aria-expanded', isOpen);
+                var icon = document.getElementById('menuIcon');
+                icon.className = isOpen ? 'fas fa-times' : 'fas fa-bars';
+            }
+
+            function closeMenu() {
+                nav.classList.remove('active');
+                toggle.classList.remove('active');
+                var icon = document.getElementById('menuIcon');
+                if (icon) icon.className = 'fas fa-bars';
+            }
+
+            window.addEventListener('scroll', onScroll);
+            toggle.addEventListener('click', toggleMenu);
+
+            nav.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', closeMenu);
+            });
+
+            document.addEventListener('click', function(e) {
+                if (nav.classList.contains('active') && !nav.contains(e.target) && !toggle.contains(e.target)) {
+                    closeMenu();
+                }
+            });
+        })();
+    </script>
 </body>
 </html>
